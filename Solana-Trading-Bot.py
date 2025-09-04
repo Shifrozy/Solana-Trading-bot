@@ -31,7 +31,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("sol-bot")
 
 # CONFIG (edit or set via environment variables)
-TELEGRAM_TOKEN = "8479918612:AAH__1v_odSUpYkY-rNKNpbGDWbqnatgQgU"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 RPC_URL = os.getenv("RPC_URL", "https://api.mainnet-beta.solana.com")
 PRIVATE_KEY_JSON = os.getenv("PRIVATE_KEY_JSON")     # path to keypair json (array of ints)
 PRIVATE_KEY_B58 = os.getenv("PRIVATE_KEY_B58")       # alt: base58-encoded private key bytes
